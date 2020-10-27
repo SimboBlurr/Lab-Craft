@@ -28,7 +28,7 @@ body{
   margin: auto;
 }
 
-.map-spain{
+.map-spain a{
   padding-top: 30px;
   stroke: var(--spain2);
   fill: var(--spain1);
