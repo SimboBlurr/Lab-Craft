@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  src: url(Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-family: 'Source Sans Pro'
+}
+
+:root{
+  --spain1: #323b4a;
+  --spain2: #7f8ca0;
+  --portugal1: #688b42;
+  --portugal2: #8bc947;
+}
+
+body{
+  background-color: #262d38;
+  stroke: red;
+}
+
+
+.wrapper{
+  min-width: 360px;
+  width: 60%;
+  margin: auto;
+}
+
+.map-spain{
+  padding-top: 30px;
+  stroke: var(--spain2);
+  fill: var(--spain1);
+}
+
+.map-spain a:hover{
+  fill: var(--spain2);
+}
+
+#path_portugalia{
+  fill: var(--portugal1);
+}
+
+a:hover #path_portugalia {
+  fill: var(--portugal2);
+  stroke: var(--portugal2);
+}
