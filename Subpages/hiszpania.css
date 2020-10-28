@@ -14,11 +14,18 @@
   --spain2: #7f8ca0;
   --portugal1: #688b42;
   --portugal2: #8bc947;
+  --background: #262d38;
+  --modal-shadow: rgba(0, 0, 0, 0.6);
+  --modal-light: #bbbbbb;
+  --modal-darkish: #555555;
+  --modal-dark: #191e26;
 }
 
 body{
-  background-color: #262d38;
+  background-color: var(--background);
   font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100%;
+  position: relative;
 }
 
 
@@ -30,6 +37,7 @@ body{
 }
 
 main{
+  flex: 1;
   min-height: 100%;
   min-width: 100%;
   border: 2px solid var(--spain2);
@@ -45,8 +53,8 @@ main{
 }
 
 .map-spain{
-  min-width: 360px;
   width: 60%;
+  min-width: 360px;
   margin: auto;
 }
 
@@ -61,11 +69,34 @@ main{
   fill: var(--spain2);
 }
 
-#path_portugalia{
+a #path_portugalia{
   fill: var(--portugal1);
 }
 
 a:hover #path_portugalia {
   fill: var(--portugal2);
   stroke: var(--portugal2);
+}
+
+/* Popup window styles */
+
+.modal-wrapper{
+  background-color: var(--modal-shadow);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+
+.modal-content{
+  background-color: var(--modal-dark);
+  width: 50%;
+  min-width: 360px;
+  margin: 1rem;
+  border-radius: 0.8rem;
+  border: 2px solid rgb(194, 71, 26);
 }
