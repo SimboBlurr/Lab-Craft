@@ -3,6 +3,7 @@ document.querySelectorAll('.region').forEach(i => {i.addEventListener('click', s
 
 function showModal(){
   document.querySelector('.modal-wrapper').style.display = "flex";
+  // document.querySelector('.modal-wrapper').style.position = "fixed";
   document.querySelectorAll('.modal-content').forEach(i => i.style.display = "none");
 
   function regionDescription(modal_name){
