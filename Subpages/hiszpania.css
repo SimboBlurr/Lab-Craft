@@ -48,7 +48,7 @@ main{
 
 .map-title{
   font-size: 1.2rem;
-  word-spacing: 1rem;
+  word-spacing: 0.5rem;
   color: var(--spain2);
   text-align: center;
   padding-bottom: 3rem;
